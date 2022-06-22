@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Button</title>
@@ -7,12 +8,315 @@
     <script src="../Semantic-UI/semantic.min.js"></script>
     <link rel="stylesheet" href="../Semantic-UI/semantic.css">
 </head>
+
 <body>
     <div class="ui container" style="padding: 50px;">
-        <button class="ui button">
-            <i class="user icon"></i>
-            Add
+        <h2 class="ui dividing header">Standard</h2>
+        <button class="ui button">Follow</button>
+        <div class="ui divider"></div>
+        <button class="ui button">Button</button>
+        <div class="ui button" tabindex="100">Focusable</div>
+        <div class="ui button">Focusable</div>
+        <h2 class="ui dividing header">Emphasis</h2>
+        <button class="ui button primary">Save</button>
+        <button class="ui button">Discard</button>
+        <button class="ui button secondary">Okay</button>
+        <button class="ui button">Cancel</button>
+        <div class="ui divider"></div>
+        <h2 class="ui dividing header">Animated</h2>
+        <div class="ui animated button" tabindex="0">
+            <div class="visible content">Next</div>
+            <div class="hidden content"><i class="right arrow icon"></i></div>
+        </div>
+        <div class="ui animated right button">
+            <div class="visible content">Previous</div>
+            <div class="hidden content"><i class="left arrow icon"></i></div>
+        </div>
+        <div class="ui animated button vertical" tabindex="0">
+            <div class="visible content">Shop</div>
+            <div class="hidden content"><i class="shop icon"></i></div>
+        </div>
+        <div class="ui animated button fade" tabindex="0">
+            <div class="visible content">Sign-up for a Pro account</div>
+            <div class="hidden content">112.99 a mount</div>
+        </div>
+        <div class="ui dividing header">Labeled</div>
+        <div class="ui labeled button" tabindex="0">
+            <div class="ui button"><i class="heart icon"></i>Like</div>
+            <a class="ui basic label">2048</a>
+        </div>
+        <div class="ui left labeled button" tabindex="0">
+            <a class="ui basic right pointing label">2048</a>
+            <div class="ui button"><i class="heart icon"></i>Like</div>
+        </div>
+        <div class="ui left labeled button" tabindex="0">
+            <a class="ui basic label right pointing">2048</a>
+            <div class="ui button icon"><i class="ui fork icon"></i></div>
+        </div>
+        <div class="ui labeled button">
+            <div class="ui button red"><i class="icon heart"></i>Like</div>
+            <a class="ui basic label left pointing red">1048</a>
+        </div>
+        <div class="ui labeled button">
+            <div class="ui basic button blue"><i class="icon fork"></i>Forks</div>
+            <a class="ui basic label blue left pointing">1048</a>
+        </div>
+        <div class="ui dividing header">Icon</div>
+        <div class="ui button icon">
+            <i class="icon cloud"></i>
+        </div>
+        <div class="ui dividing header">Labeled Icon</div>
+        <div class="ui left labeled icon button">
+            <i class="left arrow icon"></i>
+            Previous
+        </div>
+        <div class="ui labeled icon button">
+            <i class="pause icon"></i>
+            Pause
+        </div>
+        <div class="ui right labeled icon button">
+            <i class="right arrow icon"></i>
+            Next
+        </div>
+        <div class="ui dividing header">Basic</div>
+        <button class="ui basic button"><i class="icon user"></i>Add Friend</button>
+        <button class="ui primary basic button">Primary</button>
+        <button class="ui secondary basic button">Secondary</button>
+        <button class="ui positive basic button">Positive</button>
+        <button class="ui negative basic button">Negative</button>
+        <div class="ui divider"></div>
+        <button class="ui basic button red">Red</button>
+        <button class="ui basic button orange">Orange</button>
+        <button class="ui basic button yellow">Yellow</button>
+        <button class="ui basic button olive">Olive</button>
+        <button class="ui basic button green">Green</button>
+        <button class="ui basic button teal">Teal</button>
+        <button class="ui basic button blue">Blue</button>
+        <button class="ui basic button violet">Violet</button>
+        <button class="ui basic button purple">Purple</button>
+        <button class="ui basic button pink">Pink</button>
+        <button class="ui basic button brown">Brown</button>
+        <button class="ui basic button grey">Grey</button>
+        <button class="ui basic button black">Black</button>
+        <div class="ui dividing header">Inverted</div>
+        <div class="ui inverted segment">
+            <button class="ui inverted button red">Red</button>
+            <button class="ui inverted button orange">Orange</button>
+            <button class="ui inverted button yellow">Yellow</button>
+            <button class="ui inverted button olive">Olive</button>
+            <button class="ui inverted button green">Green</button>
+            <button class="ui inverted button teal">Teal</button>
+            <button class="ui inverted button blue">Blue</button>
+            <button class="ui inverted button violet">Violet</button>
+            <button class="ui inverted button purple">Purple</button>
+            <button class="ui inverted button pink">Pink</button>
+            <button class="ui inverted button brown">Brown</button>
+            <button class="ui inverted button grey">Grey</button>
+            <button class="ui inverted button black">Black</button>
+        </div>
+        <div class="ui inverted segment">
+            <button class="ui basic inverted button red">Red</button>
+            <button class="ui basic inverted button orange">Orange</button>
+            <button class="ui basic inverted button yellow">Yellow</button>
+            <button class="ui basic inverted button olive">Olive</button>
+            <button class="ui basic inverted button green">Green</button>
+            <button class="ui basic inverted button teal">Teal</button>
+            <button class="ui basic inverted button blue">Blue</button>
+            <button class="ui basic inverted button violet">Violet</button>
+            <button class="ui basic inverted button purple">Purple</button>
+            <button class="ui basic inverted button pink">Pink</button>
+            <button class="ui basic inverted button brown">Brown</button>
+            <button class="ui basic inverted button grey">Grey</button>
+            <button class="ui basic inverted button black">Black</button>
+        </div>
+        <div class="ui dividing header">Groups Buttons</div>
+        <div class="ui buttons">
+            <button class="ui button">One</button>
+            <button class="ui button">Two</button>
+            <button class="ui button">Three</button>
+        </div>
+        <div class="ui dividing header">Groups Icon Buttons</div>
+        <div class="ui icon buttons">
+            <button class="ui button"><i class="align left icon"></i></button>
+            <button class="ui button"><i class="align center icon"></i></button>
+            <button class="ui button"><i class="align right icon"></i></button>
+        </div>
+        <div class="ui icon buttons">
+            <button class="ui button"><i class="bold icon"></i></button>
+            <button class="ui button"><i class="underline icon"></i></button>
+            <button class="ui button"><i class="text width icon"></i></button>
+        </div>
+        <div class="ui dividing header">Conditionals</div>
+        <div class="ui buttons">
+            <button class="ui button">Cancel</button>
+            <div class="or"></div>
+            <button class="ui positive button">Save</button>
+        </div>
+        <div class="ui buttons">
+            <button class="ui button">China</button>
+            <div class="or" data-text="VS"></div>
+            <button class="ui button">American</button>
+        </div>
+        <div class="ui dividing header">Active & Disabled</div>
+        <button class="ui button active"><i class="icon user"></i>Follow</button>
+        <button class="ui button disabled"><i class="icon user"></i>Followed</button>
+        <div class="ui dividing header">Loading</div>
+        <button class="ui button loading">Loading</button>
+        <button class="ui basic button loading">Loading</button>
+        <button class="ui primary button loading">Loading</button>
+        <button class="ui secondary button loading">Loading</button>
+        <div class="ui dividing header">Social</div>
+        <button class="ui button facebook"><i class="facebook icon"></i>Facebook</button>
+        <button class="ui button twitter"><i class="twitter icon"></i>Twitter</button>
+        <button class="ui button google plus"><i class="google plus icon"></i>Google</button>
+        <button class="ui button vk"><i class="vk icon"></i>VK</button>
+        <button class="ui button linkedin"><i class="linkedin icon"></i>Linkedin</button>
+        <button class="ui button instagram"><i class="instagram icon"></i>Instagram</button>
+        <button class="ui button youtube"><i class="youtube icon"></i>Youtube</button>
+        <div class="ui dividing header">Size</div>
+        <button class="ui button mini">mini</button>
+        <button class="ui button tiny">Tiny</button>
+        <button class="ui button small">Small</button>
+        <button class="ui button medium">Medium</button>
+        <button class="ui button large">Large</button>
+        <button class="ui button big">Big</button>
+        <button class="ui button huge">Buge</button>
+        <button class="ui button messive">Messive</button>
+        <div class="ui dividing header">Floated</div>
+        <button class="ui button">Left Button</button>
+        <button class="ui button">Right Button</button>
+        <div class="ui divider"></div>
+        <button class="ui button right floated">Left Button</button>
+        <button class="ui button left floated">Right Button</button>
+        <div class="ui dividing header">Colored</div>
+        <button class="ui button red">Red</button>
+        <button class="ui button orange">Orange</button>
+        <button class="ui button yellow">Yellow</button>
+        <button class="ui button olive">Olive</button>
+        <button class="ui button green">Green</button>
+        <button class="ui button teal">Teal</button>
+        <button class="ui button blue">Blue</button>
+        <button class="ui button violet">Violet</button>
+        <button class="ui button purple">Purple</button>
+        <button class="ui button pink">Pink</button>
+        <button class="ui button brown">Brown</button>
+        <button class="ui button grey">Grey</button>
+        <button class="ui button black">Black</button>
+        <div class="ui dividing header">Compact</div>
+        <button class="ui button compact">Hold</button>
+        <button class="ui button compact"><i class="pause icon"></i></button>
+        <div class="ui button labeled icon compact">
+            <i class="pause icon"></i>
+            Pause
+        </div>
+        <div class="ui dividing header">Fluid</div>
+        <button class="ui fluid button">Fits container</button>
+        <div class="ui dividing header">Circular</div>
+        <button class="ui button circular icon">
+            <i class="settings icon"></i>
         </button>
+        <button class="ui button circular icon facebook">
+            <i class="facebook icon"></i>
+        </button>
+        <button class="ui button circular icon twitter">
+            <i class="twitter icon"></i>
+        </button>
+        <button class="ui button circular icon linkedin">
+            <i class="linkedin icon"></i>
+        </button>
+        <button class="ui button circular icon google plus">
+            <i class="google plus icon"></i>
+        </button>
+        <div class="ui dividing header">Vertically Attached</div>
+        <button class="ui button top attached fluid" tabindex="0">Top</button>
+        <div class="ui segment attached">
+            <img src="../Semantic-UI/themes/default/assets/images/paragraph.png" alt="">
+        </div>
+        <button class="ui button bottom attached fluid" tabindex="0">Bottom</button>
+        <div class="ui divider"></div>
+        <div class="ui buttons top attached">
+            <button class="ui button">One</button>
+            <button class="ui button">Two</button>
+        </div>
+        <div class="ui attached segment">
+            <img src="../Semantic-UI/themes/default/assets/images/paragraph.png" alt="">
+        </div>
+        <div class="ui buttons bottom attached">
+            <button class="ui button">Three</button>
+            <button class="ui button">Four</button>
+        </div>
+        <div class="ui dividing header">Horizontally Attached</div>
+        <button class="ui button left attached">Left</button>
+        <button class="ui button right attached">Right</button>
+        <div class="ui dividing header">Vertical Buttons</div>
+        <div class="ui vertical buttons">
+            <button class="ui button">Feed</button>
+            <button class="ui button">Message</button>
+            <button class="ui button">Event</button>
+            <button class="ui button">Photos</button>
+        </div>
+        <div class="ui dividing header">Icon Buttons</div>
+        <div class="ui icon buttons">
+            <button class="ui button"><i class="icon play"></i></button>
+            <button class="ui button"><i class="icon pause"></i></button>
+            <button class="ui button"><i class="icon shuffle"></i></button>
+        </div>
+        <div class="ui dividing header">Labeled Icon Buttons</div>
+        <div class="ui vertical labeled icon buttons">
+            <button class="ui button">
+                <i class="pause icon"></i>
+                Pause
+            </button>
+            <button class="ui button">
+                <i class="icon play"></i>
+                Play
+            </button>
+            <button class="ui button">
+                <i class="icon shuffle"></i>
+                Shuffle
+            </button>
+        </div>
+        <div class="ui dividing header">Mixed Group</div>
+        <div class="ui buttons">
+            <button class="ui labeled icon button">
+                <i class="left icon chevron"></i>
+                Back
+            </button>
+            <button class="ui button">
+                <i class="icon stop"></i>
+                Stop
+            </button>
+            <button class="ui right labeled icon button">
+                Forward
+                <i class="icon right chevron"></i>
+            </button>
+        </div>
+        <div class="ui dividing header">Equal Width</div>
+        <div class="ui buttons five">
+            <button class="ui button">Overview</button>
+            <button class="ui button">Specs</button>
+            <button class="ui button">Warranty</button>
+            <button class="ui button">Reviews</button>
+            <button class="ui button">Support</button>
+        </div>
+        <div class="ui buttons three">
+            <button class="ui button">Overview</button>
+            <button class="ui button">Specs</button>
+            <button class="ui button">Support</button>
+        </div>
+        <div class="ui dividing header">Colored Buttons</div>
+        <div class="ui buttons red">
+            <button class="ui button">One</button>
+            <button class="ui button">Two</button>
+            <button class="ui button">Three</button>
+        </div>
+        <div class="ui buttons blue">
+            <button class="ui button">One</button>
+            <button class="ui button">Two</button>
+            <button class="ui button">Three</button>
+        </div>
+        <div class="ui dividing header">Basic</div>
     </div>
 </body>
+
 </html>
