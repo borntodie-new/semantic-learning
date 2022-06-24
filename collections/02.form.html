@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <script src="./Semantic-UI/jquery.js"></script>
+    <script src="./Semantic-UI/semantic.min.js"></script>
+    <link rel="stylesheet" href="./Semantic-UI/semantic.css">
+    <title>Form</title>
+</head>
+<div class="ui container" style="padding: 50px;">
+    <div class="ui dividing header">Form</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" name="first-name" placeholder="First Name">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" name="last name" placeholder="Last Name" />
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+            <button class="ui primary button" type="button">Submit</button>
+        </div>
+    </div>
+    <div class="ui segment">
+        <div class="ui form">
+            <h4 class="ui header">Shipping Information</h4>
+            <div class="field">
+                <label>Name</label>
+                <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="field">
+                        <input type="text" name="first-name" placeholder="First Name">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Billing Address</label>
+                <div class="two fields">
+                    <div class="twelve wide field">
+                        <input type="text" name="street address" placeholder="Street Address">
+                    </div>
+                    <div class="four wide field">
+                        <input type="text" name="last-name" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>State</label>
+                    <select class="ui fluid dropdown">
+                        <option value="">State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Country</label>
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Select Country</div>
+                        <div class="menu">
+                            <div class="item" data-value="af"><i class="af flag"></i>Aland Islands</div>
+                            <div class="item" data-value="ax"><i class="ax flag"></i>Albania</div>
+                            <div class="item" data-value="al"><i class="al flag"></i>Algeria</div>
+                            <div class="item" data-value="dz"><i class="dz flag"></i>American Samoa</div>
+                            <div class="item" data-value="ad"><i class="ad flag"></i>Andorra</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="ui dividing header">Billing Information</h4>
+            <div class="field">
+                <label>Card Type</label>
+                <div class="ui selection dropdown">
+                    <input type="hidden" name="card">
+                    <div class="default text">Type</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-value="visa"><i class="visa icon"></i>Visa</div>
+                        <div class="item" data-value="amex"><i class="amex icon"></i>American Express</div>
+                        <div class="item" data-value="discover"><i class="discover icon"></i>Discover</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui fields">
+                <div class="seven wide field">
+                    <label>Card Number</label>
+                    <input type="text" name="Card" placeholder="Card #">
+                </div>
+                <div class="three wide field">
+                    <label>CSC</label>
+                    <input type="text" name="CVC" placeholder="CVC">
+                </div>
+                <div class="six wide field">
+                    <label>Expiration</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <select name="" id="" class="ui fluid search dropdown">
+                                <option value="">Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">Setpember</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">Decemeber</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Year">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="ui dividing header">Receipt</h4>
+            <div class="field">
+                <div class="ui fluid multiple search selection dropdown">
+                    <input type="hidden" placeholder="Saved COntacts">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Saved Contacts</div>
+                    <div class="menu">
+                        <div class="item" data-value="Eve" data-text="Eve">
+                            <img src="./img/small/eve.png" alt="" class="ui mini avatar image">
+                            Eve
+                        </div>
+                        <div class="item" data-value="Elyse" data-text="Elyse">
+                            <img src="./img/small/elyse.png" alt="" class="ui mini avatar image">
+                            Elyse
+                        </div>
+                        <div class="item" data-value="Molly" data-text="Molly">
+                            <img src="./img/small/molly.png" alt="" class="ui mini avatar image">
+                            Molly
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                    <label>Do not include a receipt in the package</label>
+                </div>
+            </div>
+            <div class="ui button" tabindex="0">Submit Order</div>
+        </div>
+    </div>
+    <div class="ui dividing header">Field</div>
+    <div class="ui form">
+        <div class="field">
+            <label>User Input</label>
+            <input type="text">
+        </div>
+    </div>
+    <div class="ui dividing header">Fields</div>
+    <div class="ui form">
+        <div class="fields">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="field">
+                <label>Middle Name</label>
+                <input type="text" placeholder="Middle Name">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+    </div>
+    <div class="ui form">
+        <div class="three fields">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="field">
+                <label>Middle Name</label>
+                <input type="text" placeholder="Middle Name">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+    </div>
+    <div class="ui form">
+        <div class="inline fields">
+            <div class="eight wide field">
+                <label>Name</label>
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="three wide field">
+                <input type="text" placeholder="Middle Name">
+            </div>
+            <div class="five wide field">
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Text Area</div>
+    <div class="ui form">
+        <div class="field">
+            <label>Text</label>
+            <textarea></textarea>
+        </div>
+        <div class="field">
+            <label>Short Text</label>
+            <textarea rows="2"></textarea>
+        </div>
+    </div>
+    <div class="ui dividing header">Checkbox</div>
+    <div class="ui form">
+        <div class="inline field">
+            <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Checkbox</label>
+            </div>
+        </div>
+        <div class="inline field">
+            <div class="ui slider checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Slider</label>
+            </div>
+        </div>
+        <div class="inline field">
+            <div class="ui toggle checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Toggle</label>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Radio Checkbox</div>
+    <div class="ui form">
+        <div class="inline fields">
+            <label>Select your favorite fruit</label>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" checked="" class="hidden">
+                    <label>Apples</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" class="hidden">
+                    <label>Oranges</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" class="hidden">
+                    <label>Pears</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" class="hidden">
+                    <label>Grapefruit</label>
+                </div>
+            </div>
+        </div>
+        <div class="ui form">
+            <div class="grouped fields">
+                <label>Select your favorite fruit</label>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" checked="" class="hidden">
+                        <label>Apples</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" class="hidden">
+                        <label>Oranges</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" class="hidden">
+                        <label>Pears</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" class="hidden">
+                        <label>Grapefruit</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Dropdown</div>
+    <div class="ui form">
+        <div class="field">
+            <label>Gender</label>
+            <div class="ui selection dropdown">
+                <input type="text" name="gender" class="hidden">
+                <i class="dropdown icon"></i>
+                <div class="default text">Gender</div>
+                <div class="menu">
+                    <div class="item" data-value="1">Male</div>
+                    <div class="item" data-value="0">Female</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui form">
+        <div class="field">
+            <label>Country</label>
+            <select class="ui search dropdown">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="olive">Olive</option>
+            </select>
+        </div>
+    </div>
+    <div class="ui dividing header">Multiple Select</div>
+    <div class="ui form">
+        <div class="field">
+            <label>Country</label>
+            <select multiple class="ui dropdown">
+                <option value="red" selected>Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="olive">Olive</option>
+            </select>
+        </div>
+    </div>
+    <div class="ui dividing header">HTML Select</div>
+    <div class="ui form">
+        <div class="field">
+            <select>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="demale">Female</option>
+            </select>
+        </div>
+    </div>
+    <div class="ui dividing header">Message</div>
+    <div class="ui form">
+        <div class="ui info message">
+            <div class="header">We had some issues</div>
+            <ui class="list">
+                <li>Please enter your first name</li>
+                <li>Please enter your last name</li>
+            </ui>
+        </div>
+    </div>
+    <div class="ui dividing header">Loading</div>
+    <div class="ui segment">
+        <div class="ui loading form">
+            <div class="field">
+                <label>E-mail</label>
+                <input type="text" placeholder="jason@gmail.com" />
+            </div>
+            <button class="ui primary button">Submit</button>
+        </div>
+    </div>
+    <div class="ui dividing header">Success</div>
+    <div class="ui segment">
+        <div class="ui form success">
+            <div class="field">
+                <label>E-mail</label>
+                <input type="email" placeholder="joe@schmoe.com">
+            </div>
+            <div class="ui success message">
+                <div class="header">Form Completed</div>
+                <p>You're all signed up for the newsletter.</p>
+            </div>
+            <div class="ui submit button">Submit</div>
+        </div>
+    </div>
+    <div class="ui dividing header">Error</div>
+    <div class="ui segment">
+        <div class="ui form error">
+            <div class="field">
+                <label>E-mail</label>
+                <input type="email" placeholder="joe@schmoe.com">
+            </div>
+            <div class="ui error message">
+                <div class="header">Form Completed</div>
+                <p>You're all signed up for the newsletter.</p>
+            </div>
+            <div class="ui submit button">Submit</div>
+        </div>
+    </div>
+    <div class="ui dividing header">Warning</div>
+    <div class="ui segment">
+        <div class="ui form warning">
+            <div class="field">
+                <label>E-mail</label>
+                <input type="email" placeholder="joe@schmoe.com">
+            </div>
+            <div class="ui warning message">
+                <div class="header">Form Completed</div>
+                <p>You're all signed up for the newsletter.</p>
+            </div>
+            <div class="ui submit button">Submit</div>
+        </div>
+    </div>
+    <div class="ui dividing header">Field Error</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="two fields">
+                <div class="error field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="error field">
+                <label>Gender</label>
+                <div class="ui selection dropdown">
+                    <input type="hidden" name="gender" class="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Gender</div>
+                    <div class="menu">
+                        <div class="item" data-value="Male" data-text="male">Male</div>
+                        <div class="item" data-value="Female" data-text="Female">Female</div>
+                    </div>
+                </div>
+            </div>
+            <div class="error inline field">
+                <div class="ui checkbox">
+                    <input type="checkbox" class="hidden">
+                    <label>I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Disabled Field</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="two fields">
+                <div class="disabled field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Read-Only Field</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input readonly type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Size</div>
+    <div class="ui segment">
+        <div class="ui mini form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+        <div class="ui tiny form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+        <div class="ui small form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+        <div class="ui large form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+        <div class="ui big form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+        <div class="ui huge form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+        <div class="ui massive form">
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" value="Jason">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" value="Will">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Equal Width Form</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="three fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Middle Name</label>
+                    <input type="text" placeholder="Middle Name">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui inverted segment">
+        <div class="ui inverted form">
+            <div class="two fields">
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" class="hidden">
+                    <label>I agree to the terms and conditions</label>
+                </div>
+            </div>
+            <button class="ui submit button">Submit</button>
+        </div>
+    </div>
+    <div class="ui dividing header">Inline Field</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="inline field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Full Name">
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Width</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="fields">
+                <div class="six wide field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="four wide field">
+                    <label>Middle Name</label>
+                    <input type="text" placeholder="Middle Name">
+                </div>
+                <div class="six wide field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="fields">
+                <div class="two wide field">
+                    <input type="text" placeholder="2 Wid">
+                </div>
+                <div class="twelve wide field">
+                    <input type="text" placeholder="12 Wid">
+                </div>
+                <div class="two wide field">
+                    <input type="text" placeholder="2 Wid">
+                </div>
+            </div>
+            <div class="fields">
+                <div class="eight wide field">
+                    <input type="text" placeholder="8 Wid">
+                </div>
+                <div class="six wide field">
+                    <input type="text" placeholder="6 Wid">
+                </div>
+                <div class="two wide field">
+                    <input type="text" placeholder="2 Wid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Required</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="required field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="required field">
+                <div class="ui checkbox">
+                    <input type="checkbox" class="hidden">
+                    <label>I agree to the terms and conditions</label>
+                </div>
+            </div>
+            <button class="ui submit button primary">Submit</button>
+        </div>
+    </div>
+    <div class="ui dividing header">Evenly Divided</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="three fields">
+                <div class="field">
+                    <label>First name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Middle name</label>
+                    <input type="text" placeholder="Middle Name">
+                </div>
+                <div class="field">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Grouped Fields</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" class="hidden">
+                        <label>Apples</label>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" class="hidden">
+                            <label>Oranges</label>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" class="hidden">
+                                <label>Pears</label>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="fruit" class="hidden">
+                                    <label>Grapefruit</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Equal Width Fields</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="equal width fields">
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dividing header">Inline Fields</div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="inline fields">
+                <label>Phone Number</label>
+                <div class="field">
+                    <input type="text" placeholder="(xxx)"> 
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="(xxxx)"> 
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="(xxxxx)"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <div class="ui form">
+            <div class="inline fields">
+                <label>What's your favorite fruit?</label>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit">
+                        <label>Apples</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit">
+                        <label>Oranges</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit">
+                        <label>Pears</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="fruit">
+                        <label>Grapefruit</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.dropdown').dropdown()
+    $('.ui.checkbox').checkbox()
+</script>
+
+</html>
