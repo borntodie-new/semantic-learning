@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <script src="../Semantic-UI/jquery.js"></script>
+    <script src="../Semantic-UI/semantic.min.js"></script>
+    <link rel="stylesheet" href="../Semantic-UI/semantic.css">
+    <title>Grid</title>
+    <style>
+        .ui.segment {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui container" style="padding: 50px;">
+        <div class="ui dividing header">Grids</div>
+        <div class="ui grid">
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Columns</div>
+        <div class="ui grid">
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="two wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Rows</div>
+        <div class="ui four column grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui dividing header">Gutters</div>
+        <div class="ui grid">
+            <div class="three column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="eight column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui relaxed grid">
+            <div class="three column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="eight column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui dividing header">Negative Margins</div>
+        <button class="ui top attached fluid button">Button before grid</button>
+        <div class="ui attached grid">
+            <div class="sixteen wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui attached grid">
+            <div class="ten wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui attached grid">
+            <div class="sixteen wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <button class="ui bottom attached fluid button">Button after grid</button>
+        <div class="ui dividing header">Automatic Flow</div>
+        <div class="ui grid">
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Column Content</div>
+        <div class="ui three column grid">
+            <div class="column">
+                <div class="ui segment"><img src="../img/wireframe/square-image.png" alt="" class="ui image"></div>
+            </div>
+            <div class="column">
+                <div class="ui segment"><img src="../img/wireframe/square-image.png" alt="" class="ui image"></div>
+            </div>
+            <div class="column">
+                <div class="ui segment"><img src="../img/wireframe/square-image.png" alt="" class="ui image"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Column Widths</div>
+        <div class="ui grid">
+            <div class="eight wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="ten wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="twelve wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="two wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="fourteen wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="sixteen wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Grouping</div>
+        <div class="ui grid">
+            <div class="row">
+                <div class="eight wide column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <dvi class="row">
+                <div class="four wide column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment"></div>
+                </div>
+            </dvi>
+        </div>
+        <div class="ui dividing header">Clearing Content</div>
+        <div class="ui grid">
+            <div class="four column row">
+                <div class="left floated column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="right floated column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="three wide column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="ten wide column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="three wide column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui dividing header">Special Grids</div>
+        <div class="ui internally celled grid">
+            <div class="row">
+                <div class="three wide column"><img src="../img/wireframe/image.png" alt="" class="ui small image"></div>
+                <div class="ten wide column"><img src="../img/wireframe/paragraph.png" alt="" class="ui image"></div>
+                <div class="three wide column"><img src="../img/wireframe/image.png" alt="" class="ui small image"></div>
+            </div>
+            <div class="row">
+                <div class="three wide column"><img src="../img/wireframe/image.png" alt="" class="ui small image"></div>
+                <div class="ten wide column"><img src="../img/wireframe/paragraph.png" alt="" class="ui image"></div>
+                <div class="three wide column"><img src="../img/wireframe/image.png" alt="" class="ui small image"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Nesting Grids</div>
+        <div class="ui two column grid">
+            <div class="column">
+                <div class="ui three column grid">
+                    <div class="column">
+                        <div class="ui segment"></div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment"></div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="column">
+                <div class="ui grid">
+                    <div class="ten wide column">
+                        <div class="ui segment"></div>
+                    </div>
+                    <div class="six wide column">
+                        <div class="ui segment"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui dividing header">Colored</div>
+        <div class="ui equal width center aligned padded grid">
+            <div class="row">
+                <div class="olive column">Olive</div>
+                <div class="black column">Black</div>
+            </div>
+            <div class="row" style="background-color: #869D05; color:#FFFFFF;">
+                <div class="column">Custom Row</div>
+            </div>
+            <div class="row">
+                <div class="black column">Black</div>
+                <div class="olive column">Olive</div>
+            </div>
+        </div>
+        <div class="ui dividing header">Automatic Column Count</div>
+        <div class="ui equal width grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui divding header">Centering Content</div>
+        <div class="ui two column centered grid">
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui dividing header">Containers</div>
+        <div class="ui grid container">
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Stackable</div>
+        <div class="ui stackable four column grid">
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+        <div class="ui dividing header">Reverse Order</div>
+        <div class="ui mobile reversed equal width grid">
+            <div class="column">
+                <div class="ui segment">First</div>
+            </div>
+            <div class="column">
+                <div class="ui segment">Second</div>
+            </div>
+            <div class="column">
+                <div class="ui segment">Third</div>
+            </div>
+        </div>
+        <div class="ui dividing header">Doubling</div>
+        <div class="ui grid">
+            <div class="doubling eight column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="doubling six column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="doubling four column row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui dividing header">Manual Tweaks</div>
+        <div class="ui centered grid">
+            <div class="computer only row">
+                <div class="column">
+                    <div class="ui segment"></div>
+                </div>
+            </div>
+            <div class="six wide tablet eight wide computer column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide tablet eight wide computer column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide tablet eight wide computer column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide tablet eight wide computer column">
+                <div class="ui segment"></div>
+            </div>
+            <div class="six wide tablet eight wide computer column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
