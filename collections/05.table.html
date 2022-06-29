@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <script src="../Semantic-UI/jquery.js"></script>
+    <script src="../Semantic-UI/semantic.min.js"></script>
+    <link rel="stylesheet" href="../Semantic-UI/semantic.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <div class="ui container" style="padding: 50px;">
+        <div class="ui dividing header">Table</div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Job</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>James</td>
+                    <td>24</td>
+                    <td>Engineer</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>24</td>
+                    <td>Engineer</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>24</td>
+                    <td>Engineer</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Evidence Rating</th>
+                    <th>Effect</th>
+                    <th>Efficacy</th>
+                    <th>Consensus</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2 class="ui center aligned header">A</h2>
+                    </td>
+                    <td class="single line">Power Output</td>
+                    <td>
+                        <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+                    </td>
+                    <td class="right aligned">80%<a href="#">18 studies</a></td>
+                    <td>Creatine supplementation is the reference compound for increasing muscular creatine levels;there
+                        is variability in this increase,however,with some nonresponse</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 class="ui center aligned header">A</h2>
+                    </td>
+                    <td class="single line">Weight</td>
+                    <td>
+                        <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+                    </td>
+                    <td class="right aligned">
+                        100%<br>
+                        <a href="#">65 studeies</a>
+                    </td>
+                    <td>Creatine is the reference compound for power improvement, with numbers from one meta-analysis to
+                        assess potency</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">
+                        <div class="ui right floated pagination menu">
+                            <a href="#" class="icon item">
+                                <i class="left chevron icon"></i>
+                            </a>
+                            <a class="item">1</a>
+                            <a class="item">2</a>
+                            <a class="item">3</a>
+                            <a class="item">4</a>
+                            <a class="item">5</a>
+                            <a class="icon item">
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+        <table class="ui very basic collapsing celled table">
+            <thead>
+                <tr>
+                    <th>Employee</th>
+                    <th>Correct Guesses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h4 class="ui image header">
+                            <img src="./img/small/elyse.png" alt="" class="ui image mini rounded">
+                            <div class="content">
+                                Lena
+                                <div class="sub header">Human Resources</div>
+                            </div>
+                        </h4>
+                    </td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4 class="ui image header">
+                            <img src="./img/small/eve.png" alt="" class="ui image mini rounded">
+                            <div class="content">
+                                Matthew
+                                <div class="sub header">Fabric Design</div>
+                            </div>
+                        </h4>
+                    </td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4 class="ui iamge header">
+                            <img src="./img/small/molly.png" class="ui rounded mini image" alt="">
+                            <div class="content">
+                                Lindsay
+                                <div class="sub header">Entertainment</div>
+                            </div>
+                        </h4>
+                    </td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="ui celled striped table">
+            <thead>
+                <tr>
+                    <th colspan="3">Git Resository</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <i class="folder icon"></i>node_modules
+                    </td>
+                    <td>Initial commit</td>
+                    <td class="right aligned">10 hours ago</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="folder icon"></i>test
+                    </td>
+                    <td>Initial commit</td>
+                    <td class="right aligned
+                    ">10 hours ago</td>
+                </tr>
+                <tr>
+                    <td><i class="folder icon"></i>Build</td>
+                    <td>Inital commit</td>
+                    <td class="right aligned collapsing">10 hours ago</td>
+                </tr>
+                <tr>
+                    <td><i class="file outline icon"></i>package.json</td>
+                    <td>Initial commit</td>
+                    <td class="right aligned">10 hours ago</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Definition</div>
+        <table class="ui definition table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Arguments</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>reset rating</td>
+                    <td>None</td>
+                    <td>Reset rating to default value</td>
+                </tr>
+                <tr>
+                    <td>set rating</td>
+                    <td>rating(integer)</td>
+                    <td>Sets the current star rating to specified value</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="ui definition table">
+            <thead>
+                <th></th>
+                <th>Name</th>
+                <th>Registration Date</th>
+                <th>E-mail address</th>
+                <th>Premium Plan</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="collapsing">
+                        <div class="ui slider checkbox">
+                            <input type="checkbox">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>
+                        John Lilki
+                    </td>
+                    <td>September 14,2013</td>
+                    <td>jhlik22@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td class="collapsing">
+                        <div class="ui slider checkbox">
+                            <input type="checkbox">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>
+                        John Lilki
+                    </td>
+                    <td>September 14,2013</td>
+                    <td>jhlik22@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td class="collapsing">
+                        <div class="ui slider checkbox">
+                            <input type="checkbox">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>
+                        John Lilki
+                    </td>
+                    <td>September 14,2013</td>
+                    <td>jhlik22@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+            <tfoot class="full-width">
+                <tr>
+                    <th></th>
+                    <th colspan="4">
+                        <button class="ui small  button">Approve</button>
+                        <button class="ui disabled small button">Approve</button>
+                        <button class="ui right floated small labeled icon primary button">
+                            <i class="user icon"></i>
+                            Add User
+                        </button>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="ui dividing header">Structured</div>
+        <table class="ui celled structured table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Files</th>
+                    <th colspan="3">Languages</th>
+                </tr>
+                <tr>
+                    <th>Ruby</th>
+                    <th>Javascript</th>
+                    <th>Python</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alpha Team</td>
+                    <td>Project one</td>
+                    <td class="right aligned">2</td>
+                    <td class="center aligned">
+                        <i class="large green checkmark icon"></i>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Beta Team</td>
+                    <td>Project-one</td>
+                    <td class="right aligned">52</td>
+                    <td></td>
+                    <td class="center aligned"><i class="large green checkmark icon"></i></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Project-one</td>
+                    <td class="right aligned">52</td>
+                    <td></td>
+                    <td class="center aligned"><i class="large green checkmark icon"></i></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Project-one</td>
+                    <td class="right aligned">52</td>
+                    <td></td>
+                    <td class="center aligned"><i class="large green checkmark icon"></i></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Positve/Negative</div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No Name Specified</td>
+                    <td>Unknown</td>
+                    <td class="negative">None</td>
+                </tr>
+                <tr class="positive">
+                    <td>Jimmy</td>
+                    <td>
+                        <i class="checkmark icon"></i>Approved
+                    </td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Jamie</td>
+                    <td>None</td>
+                    <td class="positive">
+                        <i class="close icon"></i>Requires call
+                    </td>
+                </tr>
+                <tr class="negative">
+                    <td>Jill</td>
+                    <td>Unknown</td>
+                    <td>None</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Error</div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No Name Specified</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr class="error">
+                    <td>Jimmy</td>
+                    <td>Cannot pull data</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Jamie</td>
+                    <td>Approved</td>
+                    <td class="error">
+                        <i class="attention icon"></i>Classified
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Warning</div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No Name Specified</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr class="warning">
+                    <td>Jimmy</td>
+                    <td>Cannot pull data</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Jamie</td>
+                    <td>Approved</td>
+                    <td class="warning">
+                        <i class="attention icon"></i>Classified
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Active</div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No Name Specified</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr class="active">
+                    <td>Jimmy</td>
+                    <td>Cannot pull data</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Jamie</td>
+                    <td>Approved</td>
+                    <td class="active">
+                        <i class="attention icon"></i>Classified
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Disabled</div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No Name Specified</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr class="disabled">
+                    <td>Jimmy</td>
+                    <td>Cannot pull data</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Jamie</td>
+                    <td>Approved</td>
+                    <td class="disabled">
+                        <i class="attention icon"></i>Classified
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Single Line</div>
+        <table class="ui single line table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Registration Date</th>
+                    <th>E-mail address</th>
+                    <th>Premium Plan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Lilki</td>
+                    <td>Setember14,2014</td>
+                    <td>Jasdfkln@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>John Lilki</td>
+                    <td>Setember14,2014</td>
+                    <td>Jasdfkln@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>John Lilki</td>
+                    <td>Setember14,2014</td>
+                    <td>Jasdfkln@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Fixed</div>
+        <table class="ui fixed table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>John is an interesting boy but sometimes you don't really have enough room to describe
+                        everything you'd like</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>John is an interesting boy but sometimes you don't really have enough room to describe
+                        everything you'd like</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>John is an interesting boy but sometimes you don't really have enough room to describe
+                        everything you'd like</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="ui fixed single line table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>John is an interesting boy but sometimes you don't really have enough room to describe
+                        everything you'd like</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>John is an interesting boy but sometimes you don't really have enough room to describe
+                        everything you'd like</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>John is an interesting boy but sometimes you don't really have enough room to describe
+                        everything you'd like</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Stacking</div>
+        <table class="ui unstackable table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="ui tablet stackable table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Selectable Row</div>
+        <table class="ui selectable celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td>None</td>
+                </tr>
+                <tr class="warning">
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td class="positive">No Action</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td class="error">None</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="ui inverted selectable table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Approved</td>
+                    <td>None</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui dividing header">Cell Selectable</div>
+        <table class="ui table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="error">John</td>
+                    <td>No Action</td>
+                    <td class="selectable"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td class="selectable"><a href="#">Edit</a></td>
+                </tr>
+                <tr class="warning">
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td class="selectable"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td class="negative selectable"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td class="selectable"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td class="positive">No Action</td>
+                    <td class="selectable"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td class="selectable"><a href="#">Edit</a></td>
+                </tr>
+            </tbody>
+            <div class="ui dividing header">Vertical Alignment</div>
+            <table class="ui table">
+                
+            </table>
+        </table>
+    </div>
+</body>
+<script>
+    $('.ui.rating').rating();
+</script>
+
+</html>
